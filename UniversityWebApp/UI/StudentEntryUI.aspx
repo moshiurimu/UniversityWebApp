@@ -26,19 +26,19 @@
             
               <div class="form-group">
                 <label for="regNo">Reg No</label>
-                <input type="text" class="form-control" id="regNoTextBox" placeholder="Reg No">
+                <input type="text" class="form-control" id="regNoTextBox" name="regNo" placeholder="Reg No">
               </div>
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="nameTextBox" placeholder="name">
+                <input type="text" class="form-control" id="nameTextBox" name="name" placeholder="name">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="emailTextBox" placeholder="email">
+                <input type="email" class="form-control" id="emailTextBox" name="email" placeholder="email">
               </div>
-              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"> </asp:DropDownList>
+              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" name="deprt"> </asp:DropDownList>
         
-              <button type="submit" class="btn btn-default">Submit</button>
+              <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" />
 
         </form>
     </div>

@@ -13,5 +13,15 @@ namespace UniversityWebApp.UI
         {
 
         }
+
+        protected void saveButton_Click(object sender, EventArgs e)
+        {
+            string regNo = Request.Form["regNo"].ToString();
+            string name = Request.Form["name"].ToString();
+            string email=Request.Form["email"].ToString();
+            int deprtId = Convert.ToInt32(Request.Form["deprtId"]);
+
+
+        }
     }
 }

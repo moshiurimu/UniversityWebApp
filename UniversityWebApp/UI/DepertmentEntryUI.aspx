@@ -25,14 +25,17 @@
                 <form class="form-horizontal" runat="server" role="form">
             
                   <div class="form-group">
-                    <label for="regNo">Reg No</label>
-                    <input type="text" class="form-control" id="regNoTextBox" placeholder="Reg No">
+                    <label for="regNo">Code</label>
+                    <input type="text" class="form-control" id="codeTextBox"  name="code" placeholder="code" />
                   </div>
                   <div class="form-group">
                     <label for="name">Name</label>
-                  <input type="text" class="form-control" id="nameTextBox" placeholder="name">
+                  <input type="text" class="form-control" id="nameTextBox" name="name" placeholder="name">
                   </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
+                  
+                  <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" />
+
+                  <asp:Label ID="Label1" runat="server"></asp:Label>
 
                 </form>
             </div>

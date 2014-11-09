@@ -13,5 +13,11 @@ namespace UniversityWebApp.UI
         {
 
         }
+
+        protected void btnShow_Click(object sender, EventArgs e)
+        {
+            string name = Request.Form["_name"].ToString();
+            Label1.Text = name;
+        }
     }
 }

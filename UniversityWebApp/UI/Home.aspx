@@ -25,7 +25,12 @@
                 <form class="form-horizontal" runat="server" role="form">
                     
                     <h1>Welcome to XUniversity</h1>
+                    
+                      <input class="form-control"type="text" name="_name"  />
+       
+                     <asp:Button ID="btnShow" runat="server" Text="Show" onclick="btnShow_Click" />
 
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 </form>
             </div>
           </div>
