@@ -27,5 +27,10 @@ namespace UniversityWebApp.Manager
         {
             return aDepertmentGateway.HasDepartmentCode(code);
         }
+
+        public List<Depertment> GetAllDepartment()
+        {
+            return aDepertmentGateway.GetAllDepartment();
+        }
     }
 }

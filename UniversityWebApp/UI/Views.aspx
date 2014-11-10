@@ -23,8 +23,8 @@
             </div>
             <div class="col-xs-9">
                 <form class="form-horizontal" runat="server" role="form">
-                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"> </asp:DropDownList>
-                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control"> </asp:DropDownList>
+                    <asp:DropDownList ID="departmentDropDownList" runat="server" CssClass="form-control" OnSelectedIndexChanged="departmentDropDownList_SelectedIndexChanged" AutoPostBack="True"> </asp:DropDownList>
+                    <asp:DropDownList ID="studentDropDownList" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="studentDropDownList_SelectedIndexChanged"> </asp:DropDownList>
 
                     <br />
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

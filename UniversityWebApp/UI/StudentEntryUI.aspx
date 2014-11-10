@@ -36,9 +36,12 @@
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="emailTextBox" name="email" placeholder="email">
               </div>
-              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" name="deprt"> </asp:DropDownList>
+              <asp:DropDownList ID="departmentDropDownList" runat="server" CssClass="form-control" > </asp:DropDownList>
         
               <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" />
+
+                    <br />
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
 
         </form>
     </div>
